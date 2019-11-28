@@ -1,0 +1,26 @@
+.show-more {
+  padding: 24px 20px;
+}
+
+.show-more__title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+    line-height: 20px;
+    font-size: 16px;
+    color: $black;
+    font-weight: normal;
+}
+
+.show-more__description {
+    @include description-text;
+    margin-bottom: 26px;
+}
+
+.show-more__show-all {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 94px;
+    color: #444444;
+    background-color: #f2f2f2;
+}
