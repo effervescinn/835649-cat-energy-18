@@ -1,29 +1,33 @@
 .welcome {
-  margin-bottom: 22px;
   background-image: url(../img/index-can-mobile@1x.png), url(../img/index-background-mobile@1x.jpg);
   background-repeat: no-repeat, no-repeat;
-  background-position:  bottom -10px left, top left;
+  background-size: auto, 100% auto;
+  background-position:  bottom center, top left;
   color: $white;
 }
 
 .welcome__headline {
-    margin: 0;
-    padding-top: 29px;
-    margin-bottom: 27px;
-    line-height: 36px;
-    font-size: 36px;
-    font-weight: normal;
+  margin: 0;
+  padding-top: 29px;
+  margin-bottom: 27px;
+  line-height: 36px;
+  font-size: 36px;
+  font-weight: normal;
 }
 
 .welcome__slogan {
-    margin-bottom: 316px;
-    line-height: 14px;
-    font-size: 14px;
-    text-transform: uppercase;
+  margin-bottom: 297px;
+  line-height: 14px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .welcome__choose-program {
-    padding: 11px 73px;
-    line-height: 18px;
-    font-size: 14px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 11px 0px;
+  line-height: 18px;
+  font-size: 14px;
+  text-align: center;
 }

@@ -1,5 +1,15 @@
 .page-header {
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 87.5%;
+  margin: 0 auto;
   font-family: $font;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo {
+  padding-top: 12px;
+}
+
+.page-toggle__logo {
+  padding-top: 12px;
 }
