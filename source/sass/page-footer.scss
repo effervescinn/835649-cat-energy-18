@@ -1,11 +1,14 @@
 .page-footer {
   background-color: #f2f2f2;
   font-family: $font;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .page-footer__logo {
     margin-top: 38px;
     margin-bottom: 31px;
+    align-self: center;
+}
+
+.page-footer__social {
+  align-self: center;
 }
