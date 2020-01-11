@@ -3,6 +3,28 @@
   font-family: $font;
 }
 
+.page-footer__wrapper {
+  width: 87.5%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    width: 92.2%;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: 84.7%;
+  }
+}
+
 .page-footer__logo {
     margin-top: 38px;
     margin-bottom: 31px;
@@ -11,4 +33,26 @@
 
 .page-footer__social {
   align-self: center;
+}
+
+.page-footer__wrapper {
+  width: 87.5%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    width: 92.2%;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: 84.7%;
+  }
 }

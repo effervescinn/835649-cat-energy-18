@@ -1,39 +1,160 @@
+.programs {
+  width: 87.5%;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    margin-bottom: 42px;
+    width: 92.2%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    width: 84.7%;
+  }
+}
+
 .programs__list {
     @include list;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: $desktop-width) {
+  .programs__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .programs__item {
     background-color: #f2f2f2;
-    padding: 23px 20px;
+    padding: 0px 20px 18px 20px;
     &:first-child {
       margin-bottom: 20px;
     }
 }
 
-.programs__title {
+@media (min-width: $tablet-width) {
+  .programs__item {
     padding: 0;
+    padding-bottom: 58px;
+    &:first-child {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__item {
+    padding: 0;
+    width: 46.7%;
+    padding-bottom: 57px;
+    &:first-child {
+      margin: 0;
+    }
+  }
+}
+
+.programs__title {
     margin: 0;
-    margin-bottom: 42px;
+    margin-bottom: 30px;
     line-height: 37px;
     font-size: 24px;
     color: #111111;
     font-weight: normal;
+    text-transform: uppercase;
+    padding-top: 29px;
+    padding-left: 70px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__title {
+    line-height: 37px;
+    font-size: 36px;
+    padding: 0;
+    margin-bottom: 25px;
+    padding-top: 76px;
+    padding-left: 7.3%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__title {
+    padding-top: 76px;
+    padding-left: 37.5%;
+    margin-bottom: 73px;
+  }
 }
 
 .programs__description {
     @include description-text;
-    margin-bottom: 25px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 15px;
 }
 
-.programs hr {
-    color: #d9d9d9;
-    margin: 0;
+@media (min-width: $tablet-width) {
+  .programs__description {
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 33px;
+    border: none;
+    line-height: 24px;
+    font-size: 16px;
+    padding-left: 7.3%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__description {
+    padding-left: 9.2%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs__description--first {
+    padding-right: 220px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs__description--second {
+    padding-right: 250px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__description--first {
+    padding-right: 9%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__description--second {
+    padding-right: 5%;
+  }
 }
 
 .programs__link {
     line-height: 16px;
     font-size: 16px;
     color: $black;
+    text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__link {
+    line-height: 20px;
+    font-size: 20px;
+    padding-left: 7.3%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__link {
+    padding-left: 9.2%;
+  }
 }

@@ -1,3 +1,49 @@
 .site-list {
   @include list;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+
+@media (min-width: $desktop-width) {
+  .site-list a {
+    line-height: 25px;
+    font-size: 20px;
+    color: $white;
+  }
+}
+
+.site-list__item {
+  flex-grow: 1;
+}
+
+@media (max-width: $mobile-width-only) {
+  .site-list__item {
+    flex-grow: 1;
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+    &:first-child {
+      border-top: 1px solid #e6e6e6;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__item {
+    margin-left: 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    margin-left: 34px;
+  }
 }
