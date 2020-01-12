@@ -1,34 +1,38 @@
 .welcome {
-  background-image: url(../img/index-can-mobile@1x.png), url(../img/index-background-mobile@1x.jpg);
-  background-repeat: no-repeat, no-repeat;
-  background-size: auto, 100% auto;
-  background-position:  bottom center, top left;
+  background-image: url(../img/index-background-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top;
+  position: relative;
   color: $white;
   padding-left: 6.25%;
   padding-right: 6.25%;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+
+  @media(min-resolution: $retina-dppx) {
+    background-image: url(../img/index-background-mobile@2x.jpg);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .welcome {
+    background-image: none;
     padding: 0;
     margin-bottom: 0px;
-    background-image: url(../img/index-can-mobile@1x.png);
     color: $black;
   }
 }
 
 @media (min-width: $desktop-width) {
   .welcome {
-    background-image: none;
     margin-bottom: 80px;
   }
 }
 
 .welcome__headline {
   margin: 0;
-  padding-top: 29px;
-  margin-bottom: 27px;
+  padding-top: 27px;
+  margin-bottom: 25px;
   line-height: 36px;
   font-size: 36px;
   font-weight: normal;
@@ -52,12 +56,12 @@
 @media (min-width: $desktop-width) {
   .welcome__headline {
     margin-left: 13.2%;
-    padding-top: 90px;
+    padding-top: 100px;
   }
 }
 
 .welcome__slogan {
-  margin-bottom: 297px;
+  margin-bottom: 29px;
   line-height: 14px;
   font-size: 14px;
   text-transform: uppercase;
@@ -81,6 +85,28 @@
   }
 }
 
+.welcome__image {
+  display: block;
+  margin: 0 auto 3px;
+}
+
+@media (min-width: $tablet-width) {
+  .welcome__image {
+    position: absolute;
+    right: 30px;
+    top: 254px;
+    z-index: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .welcome__image {
+    top: 22px;
+    right: 328px;
+    z-index: 1;
+  }
+}
+
 .welcome__choose-program {
   width: 280px;
   margin-left: auto;
@@ -89,7 +115,7 @@
   line-height: 18px;
   font-size: 14px;
   text-align: center;
-}
+  }
 
 @media (min-width: $tablet-width) {
   .welcome__choose-program{
@@ -98,11 +124,13 @@
     padding: 16px 0px;
     line-height: 20px;
     font-size: 20px;
+    margin-bottom: 526px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .welcome__choose-program{
     margin-left: 13.2%;
+    margin-bottom: 270px;
   }
 }
