@@ -6,7 +6,7 @@
 @media (min-width: $tablet-width) {
   .details {
     width: 100%;
-    padding-bottom: 58px;
+    padding-bottom: 36px;
     border-bottom: 1px solid #e6e6e6;
   }
 }
@@ -50,6 +50,9 @@
   display: flex;
   flex-wrap: wrap;
   counter-reset: list;
+  &:last-child {
+    margin-bottom: 22px;
+  }
 }
 
 .details__point {

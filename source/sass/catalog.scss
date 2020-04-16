@@ -15,7 +15,7 @@
       line-height: 60px;
       font-size: 60px;
       padding-left: 4%;
-      padding-top: 50px;
+      padding-top: 51px;
       border: none;
     }
   }
@@ -92,6 +92,7 @@
 @media (min-width: $tablet-width) {
   .catalog__image-link {
     margin-left: auto;
+    text-align: center;
     &--small {
       margin-top: -47px;
     }
@@ -146,8 +147,6 @@
     margin-top: 30px;
   }
 }
-
-
 
 .catalog__name {
     line-height: 20px;
@@ -215,7 +214,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  tr {
+  .catalog__description tr {
     border-bottom: 1px solid #cdcdcd;
   }
 }
@@ -228,6 +227,12 @@
     padding-bottom: 8px;
     margin-top: -5px;
     margin-bottom: 24px;
+    &:hover {
+      background-color: #5eaa2f;
+    }
+    &:active {
+      color: #8fc46e;
+    }
   }
 
 @media (min-width: $tablet-width) {
