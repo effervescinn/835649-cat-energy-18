@@ -1,38 +1,4 @@
-@media (max-width: $tablet-width - 1) {
-  .logo-tablet {
-    display: none;
-  }
-}
 
-@media (min-width: $tablet-width) {
-  .logo-mobile {
-    display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .logo-tablet {
-    display: none;
-  }
-}
-
-@media (max-width: $desktop-width - 1) {
-  .logo-desktop {
-    display: none;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .image-mobile {
-    display: none;
-  }
-}
-
-@media (max-width: $mobile-width-only) {
-  .image-tablet {
-    display: none;
-  }
-}
 
 /*@media (min-width: $tablet-width) {
   .main-nav {
